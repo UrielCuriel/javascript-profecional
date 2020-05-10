@@ -1,0 +1,16 @@
+{
+  "name": "javacript_profecional",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.8.3"
+  },
+  "browserList": [
+    "last 1 Chrome version"
+  ]
+}

@@ -1,6 +1,6 @@
-import MediaPlayer from "../MediaPlayer";
+import MediaPlayer, { MediaPlugin } from "../MediaPlayer";
 
-class AutoPause {
+class AutoPause implements MediaPlugin {
   private player: MediaPlayer;
   private threshold: number;
   constructor() {

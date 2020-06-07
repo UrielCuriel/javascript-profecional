@@ -1,6 +1,10 @@
+export interface MediaPlugin {
+  run(player: MediaPlayer): void;
+}
+
 class MediaPlayer {
   media: HTMLVideoElement;
-  private plugins: any[];
+  private plugins: Array<MediaPlugin>;
   constructor(config) {
     this.media = config.el;
     this.plugins = config.plugins || [];

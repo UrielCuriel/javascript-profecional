@@ -1,6 +1,6 @@
-import MediaPlayer from "../MediaPlayer";
+import MediaPlayer, { MediaPlugin } from "../MediaPlayer";
 
-class AutoPlay {
+class AutoPlay implements MediaPlugin {
   constructor() {}
 
   run(player: MediaPlayer) {
